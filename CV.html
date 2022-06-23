@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="JZ2HtAoAhRqfzIYfFC4OMm9Sltb7evmmnfN0LYEY">
     <title>Lan Nguyen - CV</title>
     <meta name="robots" content="noindex">
@@ -11,113 +12,270 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 
-<body id="cv-viewer">
-    <div id="cv-layout-viewer">
-        <div id="cvo-document-root">
-            <div id="cvo-document" class="cvo-document">
-                <div class="cvo-page">
-                    <div class="cvo-subpage">
-                        <div id="cvo-body">
+<body>
+    <div id="cvo-main">
+        <div id="col-left">
+            <div id="group-top-left">
+                <div id="cvo-profile" class="cvo-block">
+                    <div id="profile-title-wrapper">
+                        <div id="cvo-profile-avatar-wraper">
+                            <img id="cvo-profile-avatar" src="images/avatar.jpg" value="preview_avatar" alt="avatar">
+                        </div>
+                        <div>
+                            <span id="cvo-profile-fullname">Nguyen Thi Lan</span><br>
+                            <span id="cvo-profile-title">Software Developer</span>
+                        </div>
+                    </div>
+                    <div id="profile-contact-wraper">
+                        <div id="cvo-profile-dob-wraper">
+                            <i class="far fa-calendar-alt"></i><span id="cvo-profile-dob">January, 01,
+                                2000</span>
+                        </div>
+                        <div id="cvo-profile-gender-wraper"><i class="fa fa-user"></i><span
+                                id="cvo-profile-gender">Female</span></div>
+                        <div id="cvo-profile-phone-wraper"><i class="fa fa-phone"></i><span
+                                id="cvo-profile-phone">0966759343</span></div>
+                        <div id="cvo-profile-email-wraper"><i class="fa fa-envelope-square"></i><span
+                                id="cvo-profile-email">nglan112000@gmail.com</span></div>
+                        <div id="cvo-profile-address-wraper"><i class="fa fa-map-marker"></i><span
+                                id="cvo-profile-address">DaNang, Vietnam</span></div>
+                        <div id="cvo-profile-website-wraper"><i class="fab fa-facebook-f"></i><span
+                                id="cvo-profile-website"><a href="https://www.facebook.com/rin.rin112/" target="_blank"
+                                    class="cvo-clickable-link" rel="noreferrer noopener">Lan
+                                    Nguyen</a></span>
+                        </div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+            </div>
 
-                            <div id="cvo-main">
-                                <div id="col-left">
-
-                                    <div id="group-top-left">
-
-                                        <div id="cvo-profile" class="cvo-block">
-                                            <div id="profile-title-wrapper">
-                                                <div id="cvo-profile-avatar-wraper">
-                                                    <img id="cvo-profile-avatar" src="images/avatar.jpg"
-                                                        value="preview_avatar" alt="avatar">
-                                                </div>
-                                                <div>
-                                                    <span id="cvo-profile-fullname">Nguyen Thi Lan</span><br>
-                                                    <span id="cvo-profile-title">Software Developer</span>
-                                                </div>
-                                            </div>
-                                            <div id="profile-contact-wraper">
-                                                <div id="cvo-profile-dob-wraper">
-                                                    <i class="far fa-calendar-alt"></i><span id="cvo-profile-dob">January, 01, 2000</span>
-                                                </div>
-                                                <div id="cvo-profile-gender-wraper"><i class="fa fa-user"></i><span
-                                                        id="cvo-profile-gender">Female</span></div>
-                                                <div id="cvo-profile-phone-wraper"><i class="fa fa-phone"></i><span
-                                                        id="cvo-profile-phone">0966759343</span></div>
-                                                <div id="cvo-profile-email-wraper"><i
-                                                        class="fa fa-envelope-square"></i><span
-                                                        id="cvo-profile-email">nglan112000@gmail.com</span></div>
-                                                <div id="cvo-profile-address-wraper"><i
-                                                        class="fa fa-map-marker"></i><span
-                                                        id="cvo-profile-address">DaNang, Vietnam</span></div>
-                                                <div id="cvo-profile-website-wraper"><i
-                                                        class="fa-brands fa-facebook"></i><span
-                                                        id="cvo-profile-website"><a href="https://www.facebook.com/rin.rin112/"
-                                                            target="_blank" class="cvo-clickable-link"
-                                                            rel="noreferrer noopener">Lan Nguyen</a></span>
-                                                </div>
-                                            </div>
-                                            <div style="clear: both"></div>
-                                        </div>
-                                    </div>
-
-                                    <div id="group-bottom-left">
-                                        <div id="cvo-objective" class="cvo-block">
-                                            <div class="cvo-block-title no-horizontal-line"><span
-                                                    id="cvo-objective-blocktitle">Objective</span></div>
-                                            <div id="cvo-objective-objective">Take advantages of develop skills &amp;
-                                                experience and understanding of design to become a FE Developer and bring a lot value to Customers. From that, I will contribute
-                                                to development of DAC Data Technology Vietnam Company.</div>
-                                        </div>
-                                        <div id="cvo-skillrate" class="cvo-block">
-                                            <div class="cvo-block-title"><span
-                                                    id="cvo-skillrate-blocktitle">Skills</span></div>
-                                            <div id="skillrate-table">
-                                                <div class="row">
-                                                    <div><span class="cvo-skillrate-title">SQL</span></div>
-                                                    <div class="cvo-skillrate-bar" bval="3" rate-value="3">
-                                                        <span class="cvo-skillrate-value"></span>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div><span class="cvo-skillrate-title">Java</span></div>
-                                                    <div class="cvo-skillrate-bar" bval="4" rate-value="4">
-                                                        <span class="cvo-skillrate-value"></span>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div><span class="cvo-skillrate-title">HTML, CSS, JS</span></div>
-                                                    <div class="cvo-skillrate-bar" bval="2" rate-value="2">
-                                                        <span class="cvo-skillrate-value"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="cvo-interest" class="cvo-block">
-                                            <div class="cvo-block-title"><span
-                                                    id="cvo-interest-blocktitle">Interests</span></div>
-                                            <ul id="interest-table">
-                                                <li class="row"><span class="cvo-interest-details">Badminton</span></li>
-                                                <li class="row"><span class="cvo-interest-details">Music</span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div id="col-right">
-                                    
-                                </div>
-
-                                <div style="clear: both;"></div>
+            <div id="group-bottom-left">
+                <div id="cvo-objective" class="cvo-block">
+                    <div class="cvo-block-title no-horizontal-line"><span id="cvo-objective-blocktitle">Objective</span>
+                    </div>
+                    <div id="cvo-objective-objective">Take advantages of develop skills &amp;
+                        experience and understanding of design to become a FE Developer and
+                        bring a lot value to Customers. From that, I will contribute
+                        to development of DAC Data Technology Vietnam Company.</div>
+                </div>
+                <div id="cvo-skillrate" class="cvo-block">
+                    <div class="cvo-block-title"><span id="cvo-skillrate-blocktitle">Skills</span></div>
+                    <div id="skillrate-table">
+                        <div class="row">
+                            <div><span class="cvo-skillrate-title">SQL</span></div>
+                            <div class="cvo-skillrate-bar" bval="3" rate-value="3">
+                                <span class="cvo-skillrate-value"></span>
                             </div>
-                            <div style="clear: both;"></div>
+                        </div>
+                        <div class="row">
+                            <div><span class="cvo-skillrate-title">Java</span></div>
+                            <div class="cvo-skillrate-bar" bval="4" rate-value="4">
+                                <span class="cvo-skillrate-value"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div><span class="cvo-skillrate-title">HTML, CSS, JS</span></div>
+                            <div class="cvo-skillrate-bar" bval="2" rate-value="2">
+                                <span class="cvo-skillrate-value"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div id="cvo-interest" class="cvo-block">
+                    <div class="cvo-block-title"><span id="cvo-interest-blocktitle">Interests</span></div>
+                    <ul id="interest-table">
+                        <li class="row"><span class="cvo-interest-details">Badminton</span></li>
+                        <li class="row"><span class="cvo-interest-details">Music</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+        <div id="col-right">
+            <div id="group-col-right">
+                <div id="cvo-education" class="cvo-block">
+                    <div class="cvo-block-title">
+                        <span><i class="fa fa-graduation-cap"></i></span>
+                        <span id="cvo-education-blocktitle">Education</span>
+                    </div>
+                    <div id="education-table">
+                        <div class="row ">
+                            <div class="row-title">
+                                <div class="cvo-education-school-wraper">
+                                    <span class="cvo-education-school">DaNang University of Science and
+                                        Technology</span>
+                                </div>
+                                <div class="cvo-time">
+                                    <span class="cvo-education-start">September 2018 - December 2022</span>
+                                </div>
+                                <div style="clear:both;"></div>
+                                <div>
+                                    <span class="cvo-education-title">Major: Software</span>
+                                </div>
+                            </div>
+                            <div class="row-details">
+                                <div class="cvo-education-details">GPA: 3.36/4</div>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cvo-experience" class="cvo-block">
+                    <div class="cvo-block-title"><span><i class="fa fa-briefcase"></i></span><span
+                            id="cvo-experience-blocktitle">Work experience</span></div>
+                    <div id="experience-table">
+                        <div class="row ">
+                            <div class="row-title">
+                                <div class="cvo-experience-company-wraper">
+                                    <span class="cvo-experience-company">DAC Data Technology Vietnam
+                                        JSC</span>
+                                </div>
+                                <div class="cvo-time">
+                                    <span class="cvo-experience-start">June 2022 - August 2022</span>
+                                </div>
+                                <div style="clear:both;"></div>
+                                <div>
+                                    <span class="cvo-experience-position">Intern</span>
+                                </div>
+                            </div>
+                            <div class="row-details">
+                                <div class="cvo-experience-details">Main
+                                    responsibilities:<br />- Write and upload product
+                                    advertising post via Facebook, Forum...<br />- Introduce,
+                                    consult products and answer customers' queries via phone and
+                                    email.<br />- Assist to control goods in and out<br />-
+                                    Attend Sales Skill Course in the
+                                    Company<br /><br />Recognition and Gains:<br />- Advertising
+                                    products of the Company to customers effectively: contribute
+                                    to a 20% increase in the number of customers within one
+                                    month of working</div>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                        <div class="row ">
+                            <div class="row-title">
+                                <div class="cvo-experience-company-wraper">
+                                    <span class="cvo-experience-company">Technology Shop</span>
+                                </div>
+                                <div class="cvo-time">
+                                    <span class="cvo-experience-start">Nov 2013 - Jun 2014</span>
+                                </div>
+                                <div style="clear:both;"></div>
+                                <div>
+                                    <span class="cvo-experience-position">Part-time Sales
+                                        Staff</span>
+                                </div>
+                            </div>
+                            <div class="row-details">
+                                <div class="cvo-experience-details">- Sell goods for Foreigners
+                                    and Vietnamese at the Shop<br />- Advertise products on
+                                    media publications such as: banner,
+                                    posters,leaflets...<br />- Make reports of sales every
+                                    day.<br /><br />Achievements and skills gained: <br />- Be
+                                    assessed positively by the shop’s boss: active, extremely
+                                    adaptable...<br />- Observe, learn and catch customers’
+                                    taste well.<br />- Improve English Communication Skill.
+                                </div>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <div id="cvo-activity" class="cvo-block">
+                    <div class="cvo-block-title"><span><i class="fas fa-fist-raised"></i></span><span
+                            id="cvo-activity-blocktitle">Activities</span></div>
+                    <div id="activity-table">
+                        <div class="row ">
+                            <div class="row-title">
+                                <div class="cvo-activity-organization-wraper">
+                                    <span class="cvo-activity-organization">TOPCV - EDUCATION
+                                        TALK 2014</span>
+                                </div>
+                                <div class="cvo-time">
+                                    <span>Jan 2014 - Feb 2014</span>
+                                </div>
+                                <div style="clear: both;"></div>
+                                <div>
+                                    <span class="cvo-activity-position">Member of US
+                                        Ambassador</span>
+                                </div>
+                            </div>
+                            <div class="row-details">
+                                <div class="cvo-activity-details">- Organize monthly events,
+                                    network with US alumni <br />- Share how to hunt
+                                    scholarships and US student's life experiences to all
+                                    students who have received offers from US universities</div>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <div id="cvo-certification" class="cvo-block">
+                    <div class="cvo-block-title"><span><i class="far fa-file-alt"></i></span><span
+                            id="cvo-certification-blocktitle">Certifications</span></div>
+                    <div id="certification-table">
+                        <div class="row ">
+                            <div class="row-title">
+                                <div class="cvo-certification-title-wraper">
+                                    <span class="cvo-certification-title">TOEIC Certificate with
+                                        score 800 issued by TOPCV</span>
+                                </div>
+                                <div class="cvo-certification-time-wraper">
+                                    <span class="cvo-certification-time">2014</span>
+                                </div>
+                                <div style="clear:both;"></div>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <div id="cvo-award" class="cvo-block">
+                    <div class="cvo-block-title"><span><i class="fa fa-trophy"></i></span><span
+                            id="cvo-award-blocktitle">Honors & Awards</span></div>
+                    <div id="award-table">
+                        <div class="row ">
+                            <div class="row-title">
+                                <div class="cvo-award-title-wraper">
+                                    <span class="cvo-award-title">TOPCV Scholarship in 2nd
+                                        semester 2012-2013 and 1st semester 2013-2014.</span>
+                                </div>
+                                <div class="cvo-award-time-wraper">
+                                    <span class="cvo-award-time">2013-2014</span>
+                                </div>
+                                <div style="clear:both;"></div>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <div class="cvo-block" id="cvo-additional-info">
+                    <div class="cvo-block-title"><span><i class="fas fa-pencil-alt"></i></span><span
+                            id="cvo-additional-info-blocktitle">Additional information</span>
+                    </div>
+                    <div id="cvo-additional-information-details">(optional)</div>
+                </div>
+                <div class="cvo-block" id="cvo-reference">
+                    <div class="cvo-block-title"><span><i class="far fa-bookmark"></i></span><span
+                            id="cvo-reference-blocktitle">References</span></div>
+                    <div id="reference-table">
+                        <div class="row">
+                            <span class="cvo-reference-content color-content">
+                                Tran Van B<br />Director of TOPCV JSC<br />Email:
+                                ...<br />Mobile: ...
+                            </span>
+                        </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+        </div>
 
+        <div style="clear: both;"></div>
+    </div>
+    <div style="clear: both;"></div>
 </body>
 
 </html>

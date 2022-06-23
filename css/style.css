@@ -1,25 +1,23 @@
+
 #cvo-main {
     display: flex;
-}
-#cv-layout-viewer {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 190mm;
+    position: relative;
+    font-family: robotocondensed, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+
     width: auto;
     padding-top: auto;
     width: 1150px;
     margin: 0 auto;
     overflow: hidden;
-}
-#cvo-document-root {
-    margin: 0 auto;
-    float: none;
-}
-#cvo-document {
+    box-sizing: border-box;
     margin-bottom: 30px;
     color: #000;
-    width: 100%;
-    box-sizing: border-box;
-}
-.cvo-page {
-    background-image: url(/images/bg_029c7c.png);
+
     padding: 0;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -30,40 +28,20 @@
     box-shadow: 0 0 1px rgb(0, 0, 0 / 25%);
     background-color: #fff;
 }
-.cvo-subpage {
-    padding: 0;
-    padding-bottom: 1cm;
-    min-height: 200mm; 
-}
 
-#cvo-body {
-    margin: 0 auto;
-    width: 100%;
-    min-height: 190mm;
-    position: relative;
-    font-family: robotocondensed, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-}
-#cvo-main {
-    display: flex;
-}
 #col-left {
+    display: inline-block;
     color: #fff;
     width: 30%;
     min-height: 560px;
     float: left;
     background-color: #03bb96
 }
-#group-top-left {
 
-}
 #col-left #cvo-profile {
     width: 100%;
     padding: 0;
     margin-top: 0;
-}
-#col-left .cvo-block {
 }
 
 #profile-title-wrapper {
@@ -79,21 +57,19 @@
     width: 170px;
     height: 170px;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
 }
 img {
     border: 0;
     vertical-align: middle;
 }
 #cvo-profile-fullname {
-    margin-top: 5px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     width: 100%;
     line-height: 34px;
     display: inline-block;
     text-transform: uppercase;
+    margin: 0 auto;
 }
 #cvo-profile-title {
     width: 100%;
@@ -107,37 +83,13 @@ img {
 }
 #cvo-profile-dob-wraper div{
     padding: 5px 0;
-}
-#profile-contact-wraper i.fa {
-    background-color: #029c7c;
-    width: 19px;
-    height: 19px;
-    background-color: #7c7a79;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    font-size: 12px;
-    line-height: 20px;
-}
-#profile-contact-wraper span {
-    padding-left: 3px;
-    width: 188px;
-    color: #fff;
-    vertical-align: top;
-    display: inline-block;
+    /* display: flex; */
 }
 
-#profile-contact-wraper div {
-    padding: 5px 0;
-}
-#profile-contact-wraper i.fa {
-    background-color: #029c7c;
-}
-#profile-contact-wraper i.fa {
+#profile-contact-wraper i.far, i.fab, i.fa {
     width: 19px;
     height: 19px;
-    background-color: #7c7a79;
+    background-color: #02875c;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -147,6 +99,19 @@ img {
     line-height: 20px;
 }
 
+#profile-contact-wraper span {
+    padding-left: 3px;
+    width: 188px;
+    color: #fff;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+#profile-contact-wraper div {
+    padding: 5px 0;
+    display: flex;
+}
     
 #profile-contact-wraper span#cvo-profile-email {
     word-break: break-all;
@@ -158,17 +123,7 @@ img {
 }
 
 /* ============================================================ */
-#col-left .cvo-block {
-    width: 100%;
-    padding: 5px 12px;
-}
-#col-left .cvo-block-title {
-    margin: 0 0 10px;
-    font-size: 20px;
-    line-height: 32px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
+
 #col-left .cvo-block-title span {
     display: inline-block;
     padding-right: 5px;
@@ -178,10 +133,7 @@ img {
 #cvo-objective-objective {
     width: 100%;
 }
-#col-left .cvo-block {
-    width: 100%;
-    padding: 5px 12px;
-}
+
 #col-left .cvo-block-title {
     margin: 0 0 10px;
     font-size: 20px;
@@ -252,3 +204,146 @@ ol, ul {
     width: 100%;
     vertical-align: top;
 }
+/* ======================col right======================= */
+#col-right {
+    background-color: rgb(222, 255, 191);
+    display: flex;
+    float: right;
+    width: 70%;
+    color: #525359;
+    padding: 20px 5px 0;
+}
+
+#col-right .cvo-block {
+    width: 90%;
+    padding: 3px 15px;
+}
+
+#col-right .cvo-block-title {
+    margin: 0 0 10px;
+    font-size: 20px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#col-right .cvo-block-title span {
+    color: #263831;
+}
+#col-right .cvo-block-title span {
+    color: #263238;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.cvo-skillrate-value, 
+#col-right .cvo-block-title i.fa, i.fas {
+    background-color: #029c7c;
+    color: #fff;
+}
+#col-right .cvo-block-title i.fa, #profile-contact-wraper span {
+    color: #fff;
+}
+#col-right .cvo-block-title span:nth-child(2) {
+    width: 440px;
+    vertical-align: middle;
+}
+
+#col-right .cvo-block-title span {
+    color: #263238;
+    display: inline-block;
+    padding-right: 5px;
+}
+#col-right .row {
+    margin: 15px 0;
+}.row-title {
+    margin-bottom: 5px;
+    width: 100%;
+}
+.cvo-education-school-wraper, .cvo-education-title, .cvo-experience-company-wraper, .cvo-experience-position, .cvo-activity-organization-wraper, .cvo-activity-position, .cvo-award-title-wraper, .cvo-activity-position {
+    color: #4c5647;
+}
+.cvo-education-school-wraper {
+    width: 73%;
+    padding-right: 5px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 700;
+    color: #414142;
+    float: left;
+}
+.cvo-education-school {
+    width: 100%;
+}
+.cvo-time {
+    font-size: .9em;
+    font-weight: 600;
+    text-align: right;
+    float: right;
+    text-transform: uppercase;
+}
+.row-details {
+    margin-top: 8px;
+}
+/* ============================ */
+
+#col-right .cvo-block-title {
+    margin: 0 0 10px;
+    font-size: 20px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#col-right .cvo-block-title span {
+    color: #263238;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+#col-right .cvo-block-title i.fa, i.fas, i.far {
+    background-color: #029c7c;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#col-right .cvo-block-title span:nth-child(2) {
+    width: 440px;
+    vertical-align: middle;
+}
+#col-right .cvo-block-title span {
+    color: #263831;
+}
+#col-right .cvo-block-title span {
+    color: #263238;
+    display: inline-block;
+    padding-right: 5px;
+}
+.cvo-experience-company {
+    width: 100%;
+}
+.cvo-experience-company-wraper {
+    width: 73%;
+    padding-right: 5px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 700;
+    color: #414142;
+    float: left;
+}
+
+.cvo-activity-organization-wraper {
+    width: 73%;
+    padding-right: 5px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 700;
+    color: #414142;
+    float: left;
+}
+
