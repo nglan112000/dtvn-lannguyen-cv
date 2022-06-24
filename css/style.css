@@ -1,34 +1,22 @@
 
 #cvo-main {
     display: flex;
-    margin: 0 auto;
-    width: 100%;
-    min-height: 190mm;
-    position: relative;
     font-family: robotocondensed, Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
-
-    width: auto;
-    padding-top: auto;
-    width: 1150px;
     margin: 0 auto;
     overflow: hidden;
     box-sizing: border-box;
-    margin-bottom: 30px;
     color: #000;
-
     padding: 0;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
     width: 210mm;
     min-height: 260mm;
-    margin: 0 auto;
-    box-shadow: 0 0 1px rgb(0, 0, 0 / 25%);
     background-color: #fff;
 }
-
+/* ============================================================= */
 #col-left {
     display: inline-block;
     color: #fff;
@@ -83,7 +71,6 @@ img {
 }
 #cvo-profile-dob-wraper div{
     padding: 5px 0;
-    /* display: flex; */
 }
 
 #profile-contact-wraper i.far, i.fab, i.fa {
@@ -113,7 +100,7 @@ img {
     display: flex;
 }
     
-#profile-contact-wraper span#cvo-profile-email {
+#profile-contact-wraper span #cvo-profile-email {
     word-break: break-all;
 }
 
@@ -150,9 +137,6 @@ img {
     display: inline-block;
 }
 .cvo-skillrate-bar {
-    background-color: #fff;
-}
-.cvo-skillrate-bar {
     margin-top: 3px;
     background-color: #fff;
     display: block;
@@ -161,20 +145,18 @@ img {
     text-align: left;
     padding: 0;
 }
-.cvo-skillrate-bar[bval="3"] .cvo-skillrate-value {
-    width: 60%;
-}
-.cvo-skillrate-value, #col-right .cvo-block-title i.fa {
-    background-color: #029c7c;
-}
 .cvo-skillrate-value {
     display: block;
     height: 8px;
 }
-.cvo-skillrate-bar[bval="4"] .cvo-skillrate-value {
+.cvo-skillrate-bar[bval="1"] .cvo-skillrate-value {
+    width: 60%;
+}
+
+.cvo-skillrate-bar[bval="2"] .cvo-skillrate-value {
     width: 80%;
 }
-.cvo-skillrate-bar[bval="2"] .cvo-skillrate-value {
+.cvo-skillrate-bar[bval="3"] .cvo-skillrate-value {
     width: 40%;
 }
 /* ==================================== */
@@ -206,7 +188,7 @@ ol, ul {
 }
 /* ======================col right======================= */
 #col-right {
-    background-color: rgb(222, 255, 191);
+    background-color: rgb(89 255 240 / 21%);
     display: flex;
     float: right;
     width: 70%;
@@ -226,42 +208,28 @@ ol, ul {
     text-transform: uppercase;
     font-weight: 700;
 }
-
-#col-right .cvo-block-title span {
-    color: #263831;
-}
 #col-right .cvo-block-title span {
     color: #263238;
     display: inline-block;
     padding-right: 5px;
 }
 
-.cvo-skillrate-value, 
-#col-right .cvo-block-title i.fa, i.fas {
+.cvo-skillrate-value {
     background-color: #029c7c;
     color: #fff;
 }
-#col-right .cvo-block-title i.fa, #profile-contact-wraper span {
+#col-right #profile-contact-wraper span {
     color: #fff;
 }
 #col-right .cvo-block-title span:nth-child(2) {
     width: 440px;
     vertical-align: middle;
 }
-
-#col-right .cvo-block-title span {
-    color: #263238;
-    display: inline-block;
-    padding-right: 5px;
-}
 #col-right .row {
     margin: 15px 0;
 }.row-title {
     margin-bottom: 5px;
     width: 100%;
-}
-.cvo-education-school-wraper, .cvo-education-title, .cvo-experience-company-wraper, .cvo-experience-position, .cvo-activity-organization-wraper, .cvo-activity-position, .cvo-award-title-wraper, .cvo-activity-position {
-    color: #4c5647;
 }
 .cvo-education-school-wraper {
     width: 73%;
@@ -294,12 +262,6 @@ ol, ul {
     text-transform: uppercase;
     font-weight: 700;
 }
-#col-right .cvo-block-title span {
-    color: #263238;
-    display: inline-block;
-    padding-right: 5px;
-}
-
 #col-right .cvo-block-title i.fa, i.fas, i.far {
     background-color: #029c7c;
     color: #fff;
@@ -311,32 +273,10 @@ ol, ul {
     font-size: 20px;
     line-height: 30px;
 }
-
-#col-right .cvo-block-title span:nth-child(2) {
-    width: 440px;
-    vertical-align: middle;
-}
-#col-right .cvo-block-title span {
-    color: #263831;
-}
-#col-right .cvo-block-title span {
-    color: #263238;
-    display: inline-block;
-    padding-right: 5px;
-}
 .cvo-experience-company {
     width: 100%;
 }
-.cvo-experience-company-wraper {
-    width: 73%;
-    padding-right: 5px;
-    text-transform: uppercase;
-    text-align: left;
-    font-weight: 700;
-    color: #414142;
-    float: left;
-}
-
+.cvo-experience-company-wraper, 
 .cvo-activity-organization-wraper {
     width: 73%;
     padding-right: 5px;
