@@ -297,11 +297,13 @@ ol, ul {
     #col-left {
         display: block;
         min-width: fit-content;
+        width: 100%;
     }
     #col-right {
         display: block;
         float: left;
         min-width: fit-content;
+        width: 100%;
     }
 
 }
